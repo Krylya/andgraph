@@ -1,0 +1,22 @@
+@mixin absolute100() {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+@mixin full-bg() {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  a {
+    text-decoration: none;
+  }
+}

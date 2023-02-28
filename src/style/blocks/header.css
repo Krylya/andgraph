@@ -1,0 +1,10 @@
+.header {
+  height: 200px;
+  background-color: #888888;
+}
+.header__logo {
+  width: 200px;
+  background-color: black;
+}
+
+/*# sourceMappingURL=header.css.map */
