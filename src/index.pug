@@ -1,6 +1,16 @@
+- var pageTitle = '&graph'
+
 doctype html
 html(lang="en")
     head
-        title= "&graph"
+        meta(charset="UTF-8")
+        meta(name="description" content="")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title= pageTitle
+        link(rel='stylesheet' href='./style/style.css')
     body
-        h1 Pug - node template engine
+        section.wrapper
+            include modules/header
+            section.content
+                h1 &graph - node template engine 3
+            include modules/footer

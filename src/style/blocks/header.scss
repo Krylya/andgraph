@@ -1,0 +1,25 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+}
+// menu
+.header__menu {}
+.header__list {
+  @include reset-list;
+  display: flex;
+}
+.header__item {
+  margin-left: 30px;
+}
+.header__link {
+  color: $primary-text;
+  font-size: 1.1vw;
+}
+
+@media ($tablet-width) {
+  .header {}
+}//end @media ($tablet-width)
