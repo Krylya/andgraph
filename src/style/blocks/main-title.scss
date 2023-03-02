@@ -1,0 +1,22 @@
+.main-title__wrap {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-title__heading-h1 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+//
+// $tablet-width
+//
+@media ($tablet-width) {
+  .main-title__wrap {
+    height: 50vh;
+  }
+  .main-title__heading-h1 {
+    font-size: 4vw;
+  }
+}

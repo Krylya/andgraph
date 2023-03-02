@@ -1,9 +1,10 @@
 .header {
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid $primary-text;
 }
 
 //logo
@@ -41,7 +42,7 @@
   box-sizing: border-box;
   padding: 20px;
   position: absolute;
-  left: 0;
+  left: 90%;
   top: 60px;
   width: 100%;
   height: calc(100% - 60px);
@@ -56,14 +57,34 @@
 }
 .header__link {
   color: $primary-text;
-  font-size: 24px;
+  font-size: 36px;
 }
 
+//
+// $tablet-width
+//
 @media ($tablet-width) {
   .header__logo {
-    width: 260px;
+    width: 220px;
   }
   .header__toggle-btn {
     display: none;
+  }
+  //menu
+  .header__menu {
+    position: static;
+    padding: 0;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+  .header__list {
+    display: flex;
+  }
+  .header__item {
+    margin: 0 0 0 20px;
+  }
+  .header__link {
+    font-size: 22px;
   }
 }//end @media ($tablet-width)
