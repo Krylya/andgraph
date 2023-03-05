@@ -2,3 +2,13 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
+//
+// $tablet-width
+//
+@media ($tablet-width) {
+  .footer {
+    height: 50vh;
+    border-top: 1px solid $primary-text;
+  }
+}

@@ -12,7 +12,6 @@ body {
 }
 .content {
   flex: 1 0 auto;
-  overflow: hidden;
 }
 .footer {
   flex: 0 0 auto;
@@ -20,7 +19,7 @@ body {
 
 .container {
   box-sizing: border-box;
-  padding: 0 2%;
+  padding: 0 20px;
 }
 
 h1, h2, h3, h4 {
