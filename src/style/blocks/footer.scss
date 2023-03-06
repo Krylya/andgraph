@@ -1,6 +1,25 @@
 .footer {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $primary-text;
+    font-weight: 600;
+  }
+}
+.footer__contact-wrap {
+  margin-top: auto;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  a {
+    margin: 2px;
+  }
 }
 
 //
@@ -10,5 +29,9 @@
   .footer {
     height: 50vh;
     border-top: 1px solid $primary-text;
+  }
+  .footer__contact-wrap {
+    display: flex;
+    justify-content: space-between;
   }
 }

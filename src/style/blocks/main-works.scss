@@ -29,7 +29,7 @@
     position: relative;
     display: block;
     box-sizing: border-box;
-    height: 50vw;
+    height: 45vw;
     color: $light-text;
     text-decoration: none;
   }
@@ -61,33 +61,13 @@
   .main-works__info-container {
     position: sticky;
     top: 20px;
+    display: flex;
+    justify-content: space-between;
     z-index: 10;
   }
+
   //marquee
   .main-works__marquee {
-    height: 120px;
+    height: 160px;
   }
-}
-
-
-.sticky-wrap {
-  position: relative;
-  box-sizing: border-box;
-  height: 50vw;
-  padding: 20px;
-  margin-bottom: 40px;
-  background: #999999;
-}
-.sticky-inner-wrap {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
-.sticky {
-  position: sticky;
-  background: #ff6e00;
-  z-index: 10;
-  top: 20px;
 }
