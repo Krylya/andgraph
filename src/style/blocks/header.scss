@@ -1,10 +1,14 @@
 .header {
+  position: fixed;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: $bgndColor;
   border-bottom: 1px solid $primary-text;
+  z-index: 20;
 }
 
 //logo
@@ -38,11 +42,11 @@
 
 // menu
 .header__menu {
-  // display: none;
+  display: none;
   box-sizing: border-box;
   padding: 20px;
   position: absolute;
-  left: 90%;
+  left: 1100%;
   top: 60px;
   width: 100%;
   height: calc(100% - 60px);
@@ -64,6 +68,9 @@
 // $tablet-width
 //
 @media ($tablet-width) {
+  .header {
+    position: relative;
+  }
   .header__logo {
     width: 220px;
   }
