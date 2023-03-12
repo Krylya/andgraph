@@ -12,13 +12,26 @@
   }
 }
 .footer__contact-wrap {
-  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 160px;
+  margin-top: 120px;
 }
 .footer__contact {
   display: flex;
   flex-direction: column;
   a {
     margin: 2px;
+  }
+  &:nth-child(1) {
+    order: 2;
+  }
+  &:nth-child(2) {
+    order: 1;
+  }
+  &:nth-child(3) {
+    order: 3;
   }
 }
 
@@ -27,11 +40,23 @@
 //
 @media ($tablet-width) {
   .footer {
-    height: 50vh;
+    height: 30vw;
     border-top: 1px solid $primary-text;
   }
   .footer__contact-wrap {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    height: auto;
+    margin-top: auto;
+  }
+  .footer__contact {
+    &:nth-child(1) {
+      order: 1;
+    }
+    &:nth-child(2) {
+      order: 2;
+    }
+    &:nth-child(3) {
+      order: 3;
+    }
   }
 }

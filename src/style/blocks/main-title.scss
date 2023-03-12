@@ -18,6 +18,11 @@
     height: 50vh;
   }
   .main-title__heading-h1 {
-    font-size: 4vw;
+    font-weight: 400;
+    font-size: 6vw;
+    span:first-child {
+      color: $gray-color;
+      font-weight: 700;
+    }
   }
 }
