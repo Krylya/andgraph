@@ -622,7 +622,7 @@ p {
 
 @media (min-width:768px) {
   .footer {
-    height: 30vw;
+    height: 25vw;
     border-top: 1px solid #121213;
   }
   .footer__contact-wrap {
