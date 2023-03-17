@@ -1,0 +1,28 @@
+.project-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.project-item {}
+
+//
+// $tablet-width
+//
+@media ($tablet-width) {
+  .project-container {
+    width: 80%;
+    //max-width: 1600px;
+    margin: 0 auto;
+    background-color: #999999;
+  }
+  .project-row {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .project-item {
+      width: 50%;
+      flex-shrink: 0;
+      flex-grow: 0;
+      flex-basis: 50%;
+    }
+  }
+}

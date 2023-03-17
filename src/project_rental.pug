@@ -12,8 +12,37 @@ html(lang="en")
     body
         section.wrapper
             include modules/header
+
             section.content
-                h1 Project Rental
+                div.project-item
+                    picture
+                        source(media="(min-width: 900px)" srcset="img/projects/project_1/project_large-img_02.jpg")
+                        source(media="(min-width: 700px)" srcset="img/projects/project_1/project_large-img_02.jpg")
+                        img(srcset="img/projects/project_1/project_large-img_02.jpg" loading="lazy").main-works__img
+
+                div.project-row
+                    div.project-item
+                    div.project-item
+                        h1 Project Rental
+
+                div.project-item.project-container
+                    picture
+                        source(media="(min-width: 900px)" srcset="img/projects/project_1/project_large-img_01.jpg")
+                        source(media="(min-width: 700px)" srcset="img/projects/project_1/project_large-img_01.jpg")
+                        img(srcset="img/projects/project_1/project_large-img_01.jpg" loading="lazy").main-works__img
+
+                div.project-row.project-container
+                    div.project-item
+                        picture
+                            source(media="(min-width: 900px)" srcset="img/projects/project_2/cover_1200.jpg")
+                            source(media="(min-width: 700px)" srcset="img/projects/project_2/cover_1200.jpg")
+                            img(srcset="img/projects/project_2/cover_mob.jpg" loading="lazy").main-works__img
+                    div.project-item
+                        picture
+                            source(media="(min-width: 900px)" srcset="img/projects/project_2/cover_1200.jpg")
+                            source(media="(min-width: 700px)" srcset="img/projects/project_2/cover_1200.jpg")
+                            img(srcset="img/projects/project_2/cover_mob.jpg" loading="lazy").main-works__img
+
             include modules/footer
 
         //script(src='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js')

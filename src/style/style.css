@@ -640,6 +640,16 @@ p {
     order: 3;
   }
 }
+.content {
+  margin-top: 70px;
+  overflow: hidden;
+}
+
+@media (min-width:768px) {
+  .content {
+    margin-top: 0;
+  }
+}
 .main-title__wrap {
   height: 30vh;
   display: flex;
@@ -759,6 +769,29 @@ p {
   }
   .main-works__marquee {
     height: 160px;
+  }
+}
+.project-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width:768px) {
+  .project-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #999999;
+  }
+  .project-row {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .project-row .project-item {
+    width: 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 50%;
   }
 }
 
