@@ -1,0 +1,55 @@
+- var pageTitle = '&graph | Rental app'
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="description" content="")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title= pageTitle
+        link(rel='stylesheet' href='fonts/LabGrotesque/stylesheet.css')
+        link(rel='stylesheet' href='./style/style.css')
+    body
+        section.wrapper
+            include modules/header
+
+            section.content
+                div.project-cover
+                    picture
+                        source(media="(min-width: 900px)" srcset="img/projects/project_3/project_cover_lg.jpg")
+                        source(media="(min-width: 700px)" srcset="img/projects/project_3/project_cover_md.jpg")
+                        img(srcset="img/projects/project_3/project_cover_sm.jpg" loading="lazy").project-cover__img
+
+                div.project-row
+                    div.project-item
+                    div.project-item.project__description-wrap
+                        h1.project__title Невская косметика
+
+                div.project-item.project-container
+                    picture
+                        source(media="(min-width: 900px)" srcset="img/projects/project_3/img_02_lg.jpg")
+                        source(media="(min-width: 700px)" srcset="img/projects/project_3/img_02_md.jpg")
+                        img(srcset="img/projects/project_3/img_02_sm.jpg" loading="lazy").project__img
+
+                div.project-row.project-container
+                    div.project-item
+                        picture
+                            source(media="(min-width: 900px)" srcset="img/projects/project_3/img_04_lg.jpg")
+                            source(media="(min-width: 700px)" srcset="img/projects/project_3/img_04_md.jpg")
+                            img(srcset="img/projects/project_3/img_04_sm.jpg" loading="lazy").project__img
+                    div.project-item
+                        picture
+                            source(media="(min-width: 900px)" srcset="img/projects/project_3/img_03_lg.jpg")
+                            source(media="(min-width: 700px)" srcset="img/projects/project_3/img_03_md.jpg")
+                            img(srcset="img/projects/project_3/img_03_sm.jpg" loading="lazy").project__img
+
+                div.project-item.project-container
+                    picture
+                        source(media="(min-width: 900px)" srcset="img/projects/project_3/img_01_lg.jpg")
+                        source(media="(min-width: 700px)" srcset="img/projects/project_1/project_large-img_01.jpg")
+                        img(srcset="img/projects/project_1/project_large-img_01.jpg" loading="lazy").project__img
+
+            include modules/footer
+
+        //script(src='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js')
+        script(src="js/dropDownMenu.js")
