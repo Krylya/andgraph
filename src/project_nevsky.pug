@@ -45,9 +45,15 @@ html(lang="en")
 
                 div.project-item.project-container
                     picture
+                        source(media="(min-width: 900px)" srcset="img/projects/project_3/img_06_lg.jpg")
+                        source(media="(min-width: 700px)" srcset="img/projects/project_3/img_06_md.jpg")
+                        img(srcset="img/projects/project_3/img_06_sm.jpg" loading="lazy").project__img
+
+                div.project-item.project-container
+                    picture
                         source(media="(min-width: 900px)" srcset="img/projects/project_3/img_01_lg.jpg")
-                        source(media="(min-width: 700px)" srcset="img/projects/project_1/project_large-img_01.jpg")
-                        img(srcset="img/projects/project_1/project_large-img_01.jpg" loading="lazy").project__img
+                        source(media="(min-width: 700px)" srcset="img/projects/project_3/project_large-img_01.jpg")
+                        img(srcset="img/projects/project_3/project_large-img_01.jpg" loading="lazy").project__img
 
             include modules/footer
 
