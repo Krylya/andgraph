@@ -551,7 +551,7 @@ p {
 
 @media (min-width:768px) {
   .header {
-    position: relative;
+    background-color: transparent;
   }
   .header__logo {
     width: 220px;
